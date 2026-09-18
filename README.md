@@ -12,7 +12,7 @@ Production microsite for Tree Removal in Olympia, WA.
   - Hazardous Tree Trimming (`/hazardous-tree-trimming.html`)
 - **Blog Strategy**: 11 local SEO targeted articles (`/blog/`)
 - **Lead Capture Form**: Formspree endpoint (`https://formspree.io/f/meaoqwvd`)
-- **Phone**: `(360) 555-0199` (dispatch routing)
+- **Phone**: `(360) 822-3284` (dispatch routing)
 - **Hosting Target**: Cloudflare Pages (`olympiatreeremovalpros.com`)
 
 ## Acceptance & Quality Verification
