@@ -1,0 +1,112 @@
+[
+  {
+    "postNumber": 1,
+    "scheduledDate": "2026-09-18",
+    "keyword": "tree removal olympia",
+    "pattern": "{service} {town}",
+    "intent": "primary commercial",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 2,
+    "scheduledDate": "2026-09-21",
+    "keyword": "tree removal cost olympia",
+    "pattern": "{service} cost {town}",
+    "intent": "commercial research",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 3,
+    "scheduledDate": "2026-09-25",
+    "keyword": "emergency tree removal near me",
+    "pattern": "emergency {service} near me",
+    "intent": "urgent commercial",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 4,
+    "scheduledDate": "2026-09-28",
+    "keyword": "how to know when to replace tree removal",
+    "pattern": "how to {problem}",
+    "intent": "informational",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 5,
+    "scheduledDate": "2026-10-02",
+    "keyword": "winter storm tree removal olympia",
+    "pattern": "{seasonal} {service}",
+    "intent": "seasonal",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 6,
+    "scheduledDate": "2026-10-05",
+    "keyword": "emergency storm damage olympia",
+    "pattern": "{subservice} {town}",
+    "intent": "sub-niche commercial",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 7,
+    "scheduledDate": "2026-10-09",
+    "keyword": "emergency storm damage cost olympia",
+    "pattern": "{subservice} cost {town}",
+    "intent": "commercial research",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 8,
+    "scheduledDate": "2026-10-12",
+    "keyword": "tree removal vs emergency storm damage",
+    "pattern": "{service} vs {subservice}",
+    "intent": "comparison",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 9,
+    "scheduledDate": "2026-10-16",
+    "keyword": "stump grinding olympia",
+    "pattern": "{subservice} {town}",
+    "intent": "sub-niche commercial",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  },
+  {
+    "postNumber": 10,
+    "scheduledDate": "2026-10-19",
+    "keyword": "stump grinding cost olympia",
+    "pattern": "{subservice} cost {town}",
+    "intent": "commercial research",
+    "searchVolume": null,
+    "cpc": null,
+    "geo": "Olympia",
+    "status": "UNVALIDATED"
+  }
+]
