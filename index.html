@@ -20,57 +20,104 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "What affects tree removal cost in Olympia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tree size, condition, access, nearby structures or utilities, debris handling, and whether stump grinding is included can all affect an estimate. Confirm scope and pricing directly with the service provider."
+        "@type": "Organization",
+        "@id": "https://olympiatreeremovalpros.com/#organization",
+        "name": "Olympia Tree Removal Pros",
+        "url": "https://olympiatreeremovalpros.com",
+        "telephone": "+13608223284",
+        "email": "info@olympiatreeremovalpros.com",
+        "description": "Independent marketing and referral service connecting property owners with independently operated local tree-service providers.",
+        "image": "https://olympiatreeremovalpros.com/assets/images/hero.jpg",
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Olympia"
+          },
+          {
+            "@type": "City",
+            "name": "Tumwater"
+          },
+          {
+            "@type": "City",
+            "name": "Lacey"
+          },
+          {
+            "@type": "City",
+            "name": "Yelm"
+          }
+        ],
+        "knowsAbout": [
+          "Tree Removal",
+          "Emergency Storm Damage Cleanup",
+          "Hazardous Tree Trimming",
+          "Stump Grinding"
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://olympiatreeremovalpros.com/#service",
+        "name": "Tree Removal Services",
+        "provider": {
+          "@id": "https://olympiatreeremovalpros.com/#organization"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Olympia"
         }
       },
       {
-        "@type": "Question",
-        "name": "When should I call about a tree hazard?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Call if a tree or limb threatens a structure, driveway, or safe access route. If a tree is touching a power line, stay clear and contact the utility first."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Olympia Tree Removal Pros the contractor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Olympia Tree Removal Pros is a referral service that connects property owners with independently operated local tree-service providers. Confirm credentials, availability, scope, and contract terms directly with the provider."
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What affects tree removal cost in Olympia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tree size, condition, access, nearby structures or utilities, debris handling, and whether stump grinding is included can all affect an estimate. Confirm scope and pricing directly with the service provider."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I call about a tree hazard?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Call if a tree or limb threatens a structure, driveway, or safe access route. If a tree is touching a power line, stay clear and contact the utility first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Olympia Tree Removal Pros the contractor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Olympia Tree Removal Pros is a referral service that connects property owners with independently operated local tree-service providers. Confirm credentials, availability, scope, and contract terms directly with the provider."
+            }
+          }
+        ]
       }
     ]
   }
-  </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Olympia Tree Removal Pros","url":"https://olympiatreeremovalpros.com/","telephone":"+13608223284","description":"A referral service connecting property owners with independently operated local tree-service providers."}
   </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a class="nav__logo" href="index.html"><strong>Olympia Tree Removal Pros</strong></a>
+      <a class="nav__logo" href="/"><strong>Olympia Tree Removal Pros</strong></a>
       <button class="nav__toggle" aria-label="Menu" aria-controls="navlinks" aria-expanded="false">☰</button>
       <ul class="nav__links" id="navlinks">
-        <li class="has-dropdown"><a href="services.html">Services</a><ul class="dropdown"><li><a href="tree-removal.html">Tree Removal</a></li><li><a href="emergency-storm-damage.html">Storm Damage</a></li><li><a href="stump-grinding.html">Stump Grinding</a></li><li><a href="hazardous-tree-trimming.html">Hazardous Trimming</a></li></ul></li>
-        <li><a href="about.html">How It Works</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="has-dropdown"><a href="services">Services</a><ul class="dropdown"><li><a href="tree-removal">Tree Removal</a></li><li><a href="emergency-storm-damage">Storm Damage</a></li><li><a href="stump-grinding">Stump Grinding</a></li><li><a href="hazardous-tree-trimming">Hazardous Trimming</a></li></ul></li>
+        <li><a href="about">How It Works</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="contact">Contact</a></li>
         <li><a class="nav__call wc-phone" href="tel:+13608223284">(360) 822-3284</a></li>
       </ul>
     </nav>
   </header>
   <main id="main">
     <section class="hero">
-      <div class="hero__media"><img src="assets/images/hero.jpg" alt="A tree-service worker using rope rigging near a tall conifer" fetchpriority="high"></div>
+      <div class="hero__media"><img src="assets/images/hero.jpg" alt="A tree-service worker using rope rigging near a tall conifer" fetchpriority="high" width="1376" height="768"></div>
       <div class="hero__inner">
         <p class="hero__eyebrow">Olympia, Washington</p>
         <h1>Tree Removal in Olympia, WA</h1>
@@ -126,7 +173,7 @@
             <div class="field"><label for="lead-message">Project details <span class="opt">optional</span></label><textarea id="lead-message" name="message" rows="4" placeholder="Tree size or condition, access, nearby structures, storm damage, or other helpful details"></textarea></div>
             <div class="hp" aria-hidden="true"><label for="lead-website">Website</label><input id="lead-website" name="website" tabindex="-1" autocomplete="off"></div>
             <button class="btn btn--lg" type="submit" style="width:100%;">Send Request</button>
-            <p class="form-note">By submitting, you agree that an independent local service provider may contact you about this request. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="referral-disclosure.html">Referral Disclosure</a>.</p>
+            <p class="form-note">By submitting, you agree that an independent local service provider may contact you about this request. See our <a href="privacy-policy">Privacy Policy</a> and <a href="referral-disclosure">Referral Disclosure</a>.</p>
           </form>
         </div>
       </div>
@@ -136,10 +183,10 @@
       <div class="wrap">
         <h2>Tree Services for Olympia Properties</h2>
         <div class="grid grid--2">
-          <article class="card"><h3>Tree Removal</h3><p>For dead, declining, overgrown, or poorly located trees where removal may be the right solution.</p><a href="tree-removal.html">Learn about tree removal →</a></article>
-          <article class="card"><h3>Storm Damage</h3><p>For downed limbs, wind-damaged trees, and access or property-safety concerns after severe weather.</p><a href="emergency-storm-damage.html">Learn about storm damage →</a></article>
-          <article class="card"><h3>Stump Grinding</h3><p>Ask whether grinding, debris hauling, and backfill are included in the written scope.</p><a href="stump-grinding.html">Learn about stump grinding →</a></article>
-          <article class="card"><h3>Hazardous Tree Trimming</h3><p>For deadwood, clearance concerns, and branches that may need professional assessment.</p><a href="hazardous-tree-trimming.html">Learn about hazardous trimming →</a></article>
+          <article class="card"><h3>Tree Removal</h3><p>For dead, declining, overgrown, or poorly located trees where removal may be the right solution.</p><a href="tree-removal">Learn about tree removal →</a></article>
+          <article class="card"><h3>Storm Damage</h3><p>For downed limbs, wind-damaged trees, and access or property-safety concerns after severe weather.</p><a href="emergency-storm-damage">Learn about storm damage →</a></article>
+          <article class="card"><h3>Stump Grinding</h3><p>Ask whether grinding, debris hauling, and backfill are included in the written scope.</p><a href="stump-grinding">Learn about stump grinding →</a></article>
+          <article class="card"><h3>Hazardous Tree Trimming</h3><p>For deadwood, clearance concerns, and branches that may need professional assessment.</p><a href="hazardous-tree-trimming">Learn about hazardous trimming →</a></article>
         </div>
       </div>
     </section>
@@ -195,9 +242,9 @@
     <div class="wrap">
       <div class="footer-grid">
         <div><h4>Olympia Tree Removal Pros</h4><p>Olympia Tree Removal Pros connects property owners with independently operated tree-service providers.</p><p class="footer-disclaimer">Confirm provider credentials, availability, scope, and contract terms directly before work begins.</p></div>
-        <div><h4>Services</h4><ul><li><a href="tree-removal.html">Tree Removal</a></li><li><a href="emergency-storm-damage.html">Storm Damage</a></li><li><a href="stump-grinding.html">Stump Grinding</a></li><li><a href="hazardous-tree-trimming.html">Hazardous Trimming</a></li></ul></div>
-        <div><h4>Areas</h4><ul><li><a href="lacey-tree-removal.html">Lacey</a></li><li><a href="tumwater-tree-removal.html">Tumwater</a></li><li><a href="west-olympia-tree-removal.html">West Olympia</a></li><li><a href="boston-harbor-tree-removal.html">Boston Harbor</a></li></ul></div>
-        <div><h4>Information</h4><ul><li><a href="about.html">How It Works</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="referral-disclosure.html">Referral Disclosure</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="tree-removal">Tree Removal</a></li><li><a href="emergency-storm-damage">Storm Damage</a></li><li><a href="stump-grinding">Stump Grinding</a></li><li><a href="hazardous-tree-trimming">Hazardous Trimming</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="lacey-tree-removal">Lacey</a></li><li><a href="tumwater-tree-removal">Tumwater</a></li><li><a href="west-olympia-tree-removal">West Olympia</a></li><li><a href="boston-harbor-tree-removal">Boston Harbor</a></li></ul></div>
+        <div><h4>Information</h4><ul><li><a href="about">How It Works</a></li><li><a href="contact">Contact</a></li><li><a href="privacy-policy">Privacy Policy</a></li><li><a href="referral-disclosure">Referral Disclosure</a></li></ul></div>
       </div>
       <div class="footer-bottom">© 2026 Olympia Tree Removal Pros. All rights reserved.</div>
     </div>
