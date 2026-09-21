@@ -22,38 +22,83 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["TreeService", "HomeAndConstructionBusiness"],
         "@id": "https://olympiatreeremovalpros.com/#organization",
         "name": "Olympia Tree Removal Pros",
         "url": "https://olympiatreeremovalpros.com",
         "telephone": "+13608223284",
         "email": "info@olympiatreeremovalpros.com",
-        "description": "Independent marketing and referral service connecting property owners with independently operated local tree-service providers.",
+        "priceRange": "$$",
+        "description": "Independent marketing and referral service connecting property owners with licensed, insured, and independently operated tree-service providers across Olympia and Thurston County.",
         "image": "https://olympiatreeremovalpros.com/assets/images/hero.jpg",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 47.0379,
+          "longitude": -122.9007
+        },
         "areaServed": [
-          {
-            "@type": "City",
-            "name": "Olympia"
-          },
-          {
-            "@type": "City",
-            "name": "Tumwater"
-          },
-          {
-            "@type": "City",
-            "name": "Lacey"
-          },
-          {
-            "@type": "City",
-            "name": "Yelm"
-          }
+          { "@type": "City", "name": "Olympia" },
+          { "@type": "City", "name": "Tumwater" },
+          { "@type": "City", "name": "Lacey" },
+          { "@type": "City", "name": "Yelm" },
+          { "@type": "City", "name": "Rochester" },
+          { "@type": "AdministrativeArea", "name": "Thurston County" },
+          { "@type": "PostalCode", "postalCode": "98501" },
+          { "@type": "PostalCode", "postalCode": "98502" },
+          { "@type": "PostalCode", "postalCode": "98506" },
+          { "@type": "PostalCode", "postalCode": "98512" },
+          { "@type": "PostalCode", "postalCode": "98513" },
+          { "@type": "PostalCode", "postalCode": "98516" },
+          { "@type": "PostalCode", "postalCode": "98579" },
+          { "@type": "PostalCode", "postalCode": "98597" }
         ],
         "knowsAbout": [
           "Tree Removal",
           "Emergency Storm Damage Cleanup",
           "Hazardous Tree Trimming",
-          "Stump Grinding"
-        ]
+          "Stump Grinding",
+          "Crane-Assisted Tree Dismantling",
+          "Douglas-fir Care & Removal",
+          "Tree Risk Assessment"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Tree Care & Removal Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Residential Tree Removal",
+                "description": "Precision sectional dismantling and felling of hazardous, dying, or overgrown trees in tight urban spaces."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Emergency Storm Damage Cleanup",
+                "description": "Rapid triage and clearance for fallen trees and hanging limbs threatening homes, driveways, or utilities."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Stump Grinding & Root Removal",
+                "description": "Sub-surface hydraulic stump grinding 6 to 12 inches below grade, debris removal, and backfilling."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hazardous Canopy Trimming & Thinning",
+                "description": "Deadwood pruning, crown reduction, and clearance trimming to prevent windthrow and structural failure."
+              }
+            }
+          ]
+        }
       },
       {
         "@type": "Service",
@@ -84,6 +129,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Call if a tree or limb threatens a structure, driveway, or safe access route. If a tree is touching a power line, stay clear and contact the utility first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a permit to remove a tree in Olympia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Within the City of Olympia (OMC 16.60), single-family residential lots are generally exempt provided minimum tree density is maintained. However, landmark trees (trees over specified diameter thresholds) and trees inside critical areas or shoreline zones require a formal permit. Lacey and Tumwater have separate local rules."
             }
           },
           {
@@ -218,6 +271,95 @@
       </div>
     </section>
 
+    <section class="section section--alt" id="permit-matrix">
+      <div class="wrap">
+        <h2>Olympia & Thurston County Tree Permit Matrix</h2>
+        <p class="section__lead">Tree removal regulations vary significantly across municipal jurisdictions in the South Sound. Review local permit guidelines before scheduling felling:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Jurisdiction</th>
+                <th>Exemption Rules</th>
+                <th>Permit Required When</th>
+                <th>Key Code Reference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>City of Olympia</strong></td>
+                <td>Developed single-family residential lots under 2 acres maintaining minimum tree density.</td>
+                <td>Landmark trees (>24" DBH), critical area buffers, steep slopes, or shoreline zones.</td>
+                <td>OMC Ch. 16.60 &amp; 16.56</td>
+              </tr>
+              <tr>
+                <td><strong>City of Tumwater</strong></td>
+                <td>Removal of up to 6 trees per parcel within 3 consecutive calendar years with written waiver.</td>
+                <td>Trees in greenbelts, wetland buffers, historic districts, or exceeding annual allowance.</td>
+                <td>TMC Ch. 16.08</td>
+              </tr>
+              <tr>
+                <td><strong>City of Lacey</strong></td>
+                <td>Removal of up to 3 trees within 60 consecutive months under single-family exemption provisions.</td>
+                <td>Removal beyond 3 trees, landmark specimens, or trees within designated open spaces.</td>
+                <td>LMC Ch. 14.32</td>
+              </tr>
+              <tr>
+                <td><strong>Unincorporated Thurston County</strong></td>
+                <td>Standard residential maintenance outside critical zones.</td>
+                <td>Properties adjacent to salmon streams, Puget Sound shorelines, or marine bluffs.</td>
+                <td>Thurston Co. CAO (Title 24)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tree-vulnerability">
+      <div class="wrap">
+        <h2>South Sound Tree Species &amp; Soil Hazards</h2>
+        <p class="section__lead">Thurston County's maritime climate creates specific mechanical stresses on native Pacific Northwest trees:</p>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Douglas-fir Root Rot</h3>
+            <p><strong>Pathology:</strong> <em>Phellinus weirii</em> (laminated root rot) decays anchor roots beneath mature coastal Douglas-firs.</p>
+            <p class="muted"><strong>Risk:</strong> Sudden windthrow during November–February squalls without visible crown symptoms.</p>
+          </article>
+          <article class="card">
+            <h3>Bigleaf Maple Codominant Stems</h3>
+            <p><strong>Pathology:</strong> Tight V-shaped crotches develop included bark, trapping moisture and rotting the joint.</p>
+            <p class="muted"><strong>Risk:</strong> Heavy summer leaf weight or winter wet snow causes catastrophic branch failure over roofs.</p>
+          </article>
+          <article class="card">
+            <h3>Glacial Till Saturation</h3>
+            <p><strong>Soil Condition:</strong> Dense glacial hardpan prevents drainage, leaving topsoil waterlogged during heavy rains.</p>
+            <p class="muted"><strong>Risk:</strong> Root plates lift as soil liquifies; visible soil mounding or leaning signals immediate risk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contractor-standards">
+      <div class="wrap split">
+        <div>
+          <h2>Network Contractor Standards &amp; Safety</h2>
+          <p class="section__lead">Tree removal is high-risk technical rigging. We connect homeowners exclusively with established independent local contractors who meet stringent operational criteria:</p>
+          <ul class="local-points">
+            <li><strong>Active WA L&amp;I Registration:</strong> Verified contractor license in good standing with Washington State Department of Labor &amp; Industries.</li>
+            <li><strong>Commercial Liability Protection:</strong> Verified minimum $1,000,000 to $2,000,000 general liability insurance.</li>
+            <li><strong>ANSI Industry Compliance:</strong> Pruning performed according to ANSI A300 arboricultural standards and work executed under ANSI Z133 safety codes.</li>
+            <li><strong>Specialized Rigging Capability:</strong> Access to friction lowering brakes, tracked spider lifts, and crane-assisted felling for zero lawn impact.</li>
+          </ul>
+        </div>
+        <div class="quick-answer-box">
+          <span class="quick-answer-box__badge">Homeowner Checklist</span>
+          <p class="quick-answer-box__text">Always request a written estimate detailing hauling, brush chipping, wood bucking, stump grinding depth, and property restoration before work begins.</p>
+          <div class="quick-answer-box__followup">Questions about a hazard? Call <a class="wc-phone" href="tel:+13608223284"><strong>(360) 822-3284</strong></a>.</div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--alt">
       <div class="wrap">
         <h2 class="center">Questions We Hear</h2>
@@ -241,8 +383,8 @@
     <div class="wrap">
       <div class="footer-grid">
         <div><h4>Olympia Tree Removal Pros</h4><p>Olympia Tree Removal Pros connects property owners with independently operated tree-service providers.</p><p class="footer-disclaimer">Confirm provider credentials, availability, scope, and contract terms directly before work begins.</p></div>
-        <div><h4>Services</h4><ul><li><a href="tree-removal">Tree Removal</a></li><li><a href="emergency-storm-damage">Storm Damage</a></li><li><a href="stump-grinding">Stump Grinding</a></li><li><a href="hazardous-tree-trimming">Hazardous Trimming</a></li></ul></div>
-        <div><h4>Areas</h4><ul><li><a href="lacey-tree-removal">Lacey</a></li><li><a href="tumwater-tree-removal">Tumwater</a></li><li><a href="west-olympia-tree-removal">West Olympia</a></li><li><a href="boston-harbor-tree-removal">Boston Harbor</a></li></ul></div>
+        <div><h4>Services</h4><ul><li><a href="tree-removal">Tree Removal</a></li><li><a href="emergency-storm-damage">Storm Damage</a></li><li><a href="stump-grinding">Stump Grinding</a></li><li><a href="hazardous-tree-trimming">Hazardous Trimming</a></li><li><a href="crane-tree-removal">Crane Tree Removal</a></li></ul></div>
+        <div><h4>Areas</h4><ul><li><a href="lacey-tree-removal">Lacey</a></li><li><a href="tumwater-tree-removal">Tumwater</a></li><li><a href="west-olympia-tree-removal">West Olympia</a></li><li><a href="boston-harbor-tree-removal">Boston Harbor</a></li><li><a href="yelm-tree-removal">Yelm</a></li><li><a href="rochester-tree-removal">Rochester</a></li><li><a href="steamboat-island-tree-removal">Steamboat Island</a></li></ul></div>
         <div><h4>Information</h4><ul><li><a href="about">How It Works</a></li><li><a href="contact">Contact</a></li><li><a href="privacy-policy">Privacy Policy</a></li><li><a href="referral-disclosure">Referral Disclosure</a></li></ul></div>
       </div>
       <div class="footer-bottom">© 2026 Olympia Tree Removal Pros. All rights reserved.</div>
